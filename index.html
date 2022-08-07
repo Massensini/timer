@@ -12,43 +12,43 @@
 
 </head>
 <body>
-  <h1>We're launching soon</h1>
+  <h1>Timer</h1>
 
   <main>
     <div class="countMain">
-      <div class="countContainer">00</div>
+      <div class="countContainer" id="countDay">00</div>
       <p>Days</p>
     </div>
     
 
     <div class="countMain">
-      <div class="countContainer">00</div>
+      <div class="countContainer" id="countHour">00</div>
       <p>Hours</p>
     </div>
     
 
     <div class="countMain">
-      <div class="countContainer">00</div>
+      <div class="countContainer" id="countMin">00</div>
       <p>Minutes</p>
     </div>
     
 
     <div class="countMain">
-      <div class="countContainer">00</div>
+      <div class="countContainer" id="countSec">00</div>
       <p>Seconds</p>
     </div>    
   </main>
 
   <div class="btnContainer">
-    <button>
+    <button id="startBtn">
       <i class="fa-solid fa-play"></i>
     </button>
 
-    <button>
+    <button id="pauseBtn">
       <i class="fa-solid fa-pause"></i>
     </button>
 
-    <button>
+    <button id="clearBtn">
       <i class="fa-solid fa-hourglass-start"></i>
     </button>
   </div>
@@ -58,5 +58,7 @@
     <i class="fa-brands fa-pinterest"></i>
     <i class="fa-brands fa-instagram"></i>
   </footer>  
+
+  <script src="./JS/index.js"></script>
 </body>
 </html>
