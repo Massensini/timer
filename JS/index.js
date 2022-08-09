@@ -24,12 +24,7 @@ function pause() {
 }
 
 function clear() {
-    clearInterval(startTimer)
-
-    countSec.innerHTML = '00'
-    countMin.innerHTML = '00'
-    countHour.innerHTML = '00'
-    countDay.innerHTML = '00'
+    
 }
 
 function timer() {
@@ -46,10 +41,11 @@ function timer() {
         dd++
     }
 
-    countSec.innerHTML = ss
-    countMin.innerHTML = mm
-    countHour.innerHTML = hh
-    countDay.innerHTML = dd
+
+    countSec.innerHTML = ss < 10 ? '0' + ss : ss
+    countMin.innerHTML = mm < 10 ? '0' + mm : mm
+    countHour.innerHTML = hh < 10 ? '0' + hh : hh
+    countDay.innerHTML = dd < 10 ? '0' + dd : dd
 }
 
 startBtn.addEventListener('click', start)
