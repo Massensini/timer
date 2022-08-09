@@ -24,7 +24,17 @@ function pause() {
 }
 
 function clear() {
-    
+    clearInterval(startTimer)
+
+    ss = 0
+    mm = 0
+    hh = 0
+    dd = 0
+
+    countSec.innerHTML = '00'
+    countMin.innerHTML = '00'
+    countHour.innerHTML = '00'
+    countDay.innerHTML = '00'
 }
 
 function timer() {
