@@ -24,8 +24,6 @@ function pause() {
 }
 
 function clear() {
-    clearInterval(startTimer)
-
     ss = 0
     mm = 0
     hh = 0
@@ -35,6 +33,8 @@ function clear() {
     countMin.innerHTML = '00'
     countHour.innerHTML = '00'
     countDay.innerHTML = '00'
+
+    clearInterval(startTimer)
 }
 
 function timer() {
