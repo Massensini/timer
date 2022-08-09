@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Frontend Mentor | Launch countdown timer</title>
 
 </head>
+
 <body>
-  <h1>Timer</h1>
+  <div class="top">
+    <h1>Timer</h1>
+  </div>
 
   <main>
-    <div class="countMain">
-      <div class="countContainer" id="countDay">00</div>
-      <p>Days</p>
-    </div>
-    
+    <div class="timerContainer">
+      <div class="timerContent">
+        <div id="countDay" class="counter">00</div>
+        <p>Days</p>
+      </div>
 
-    <div class="countMain">
-      <div class="countContainer" id="countHour">00</div>
-      <p>Hours</p>
-    </div>
-    
 
-    <div class="countMain">
-      <div class="countContainer" id="countMin">00</div>
-      <p>Minutes</p>
-    </div>
-    
+      <div class="timerContent">
+        <div id="countHour" class="counter">00</div>
+        <p>Hours</p>
+      </div>
 
-    <div class="countMain">
-      <div class="countContainer" id="countSec">00</div>
-      <p>Seconds</p>
-    </div>    
+
+      <div class="timerContent">
+        <div id="countMin" class="counter">00</div>
+        <p>Minutes</p>
+      </div>
+
+
+      <div class="timerContent">
+        <div id="countSec" class="counter">00</div>
+        <p>Seconds</p>
+      </div>
+    </div>
+
+
+    <div class="btnContainer">
+      <button id="startBtn">
+        <i class="fa-solid fa-play"></i>
+      </button>
+
+      <button id="pauseBtn">
+        <i class="fa-solid fa-pause"></i>
+      </button>
+
+      <button id="clearBtn">
+        <i class="fa-solid fa-hourglass-start"></i>
+      </button>
+    </div>
   </main>
-
-  <div class="btnContainer">
-    <button id="startBtn">
-      <i class="fa-solid fa-play"></i>
-    </button>
-
-    <button id="pauseBtn">
-      <i class="fa-solid fa-pause"></i>
-    </button>
-
-    <button id="clearBtn">
-      <i class="fa-solid fa-hourglass-start"></i>
-    </button>
-  </div>
 
   <footer>
     <i class="fa-brands fa-square-facebook"></i>
     <i class="fa-brands fa-pinterest"></i>
     <i class="fa-brands fa-instagram"></i>
-  </footer>  
+  </footer>
 
   <script src="./JS/index.js"></script>
 </body>
+
 </html>
