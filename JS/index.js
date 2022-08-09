@@ -16,7 +16,7 @@ let startTimer;
 
 
 function start() {
-    startTimer = setInterval(() => {timer()}, 1)
+    startTimer = setInterval(() => {timer()}, 1000)
 }
 
 function pause() {
