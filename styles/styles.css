@@ -47,42 +47,33 @@ main {
 }
 
 .timerContainer {
-    width: 85%;
-    height: 80%;
-
+    width: 40%;
+    min-width: 375px;   
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:  8%;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .timerContent {
-    width: 23%;
-    height: 80%;
-
+    width: 33%;
+    min-width: 120px;
+    height: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-.counter {
-    width: 80%;
-    height: 80%;
-
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    font-size: 70px;
-    color: hsl(345, 95%, 68%);
-
-    background: linear-gradient(hsl(235, 16%, 14%),hsl(236, 21%, 26%));
+    background: linear-gradient( to bottom,hsl(234, 17%, 12%), hsl(236, 21%, 26%));
     border-radius: 10px;
 }
 
+.counter {
+    font-size: 5rem;
+    color: hsl(345, 95%, 68%);
+}
+
 .timerContent p {
-    color: hsl(237, 18%, 59%);
+    color: hsl(345, 95%, 68%);
 }
 
 .btnContainer {
@@ -103,7 +94,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(hsl(234, 17%, 12%), hsl(236, 21%, 26%) );
+    background: linear-gradient(to bottom, hsl(234, 17%, 12%), hsl(236, 21%, 26%) );
 
     cursor: pointer;
 }
